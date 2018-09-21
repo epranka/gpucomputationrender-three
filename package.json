@@ -1,0 +1,23 @@
+{
+  "name": "gpucomputationrender-three",
+  "version": "1.0.0",
+  "description": "ES6 GPUComputationRender for THREE.js",
+  "main": "index.js",
+  "repository": "https://renesans-agency@bitbucket.org/renesans/gpucomputationrender-three.git",
+  "author": "Edvinas Pranka <epranka@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "./node_modules/.bin/babel GPUComputationRender.js --out-file index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "three": ">=0.94.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2"
+  }
+}
