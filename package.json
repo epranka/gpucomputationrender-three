@@ -8,6 +8,15 @@
     "author": "Edvinas Pranka (@epranka, https://www.kodmina.lt)",
     "license": "MIT",
     "private": false,
+    "keywords": [
+        "three",
+        "typescript",
+        "es6",
+        "gpu",
+        "gpugpu",
+        "shaders",
+        "render"
+    ],
     "scripts": {
         "build": "tsc",
         "test": "echo \"Error: no test specified\" && exit 1"

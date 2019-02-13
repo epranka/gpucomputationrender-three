@@ -1,16 +1,32 @@
 # GPUComputationRender (ES6)
 
+**Typescript definitions inside module**
+
 With yarn
+
 ```
     yarn add gpucomputationrender-three
 ```
 
 Or with npm
+
 ```
-    npm install gpucomputationrender-three --save
+    npm install --save gpucomputationrender-three
 ```
 
-## Author yomboprime https://github.com/yomboprime
+Example of usage
+
+https://threejs.org/examples/?q=gpgpu#webgl_gpgpu_birds
+
+**I just rewrite module to Typescript**
+
+Edvinas pranka
+
+[@epranka](https://twitter.com/epranka)
+
+https://www.kodmina.lt
+
+## Original module author yomboprime https://github.com/yomboprime
 
 GPUComputationRenderer, based on SimulationRenderer by zz85
 
@@ -72,7 +88,7 @@ velVar.material.uniforms.time = { value: 0.0 };
 var error = gpuCompute.init();
 
 if ( error !== null ) {
-  
+
  console.error( error );
 
 }
@@ -91,6 +107,7 @@ myMaterial.uniforms.myTexture.value = gpuCompute.getCurrentRenderTarget( posVar 
 
 renderer.render( myScene, myCamera );
 ```
+
 ---
 
 Also, you can use utility functions to create ShaderMaterial and perform computations (rendering between textures)
