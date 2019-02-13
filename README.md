@@ -7,7 +7,7 @@ With yarn
 
 Or with npm
 ```
-    npm i gpucomputationrender-three
+    npm install gpucomputationrender-three --save
 ```
 
 ## Author yomboprime https://github.com/yomboprime
