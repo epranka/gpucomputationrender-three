@@ -151,7 +151,8 @@ class GPUComputationRenderer {
     }
     doRenderTarget(material, output) {
         this.mesh.material = material;
-        this.renderer.render(this.scene, this.camera, output);
+        this.renderer.setRenderTarget(output);
+        this.renderer.render(this.scene, this.camera);
         this.mesh.material = this.passThruShader;
     }
     renderTexture(input, output) {

@@ -371,7 +371,8 @@ export class GPUComputationRenderer {
 
     public doRenderTarget(material: ShaderMaterial, output: RenderTarget) {
         this.mesh.material = material;
-        this.renderer.render(this.scene, this.camera, output);
+		this.renderer.setRenderTarget(output);
+        this.renderer.render(this.scene, this.camera);
         this.mesh.material = this.passThruShader;
     }
 
