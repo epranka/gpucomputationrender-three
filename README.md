@@ -52,7 +52,7 @@ The size of the computation (sizeX \* sizeY) is defined as 'resolution' automati
 
 Basic use:
 
-```
+```javascript
 // Initialization...
 
 // Create computation renderer
@@ -114,7 +114,7 @@ Also, you can use utility functions to create ShaderMaterial and perform computa
 
 Note that the shaders can have multiple input textures.
 
-```
+```javascript
 var myFilter1 = gpuCompute.createShaderMaterial( myFilterFragmentShader1, { theTexture: { value: null } } );
 
 var myFilter2 = gpuCompute.createShaderMaterial( myFilterFragmentShader2, { theTexture: { value: null } } );
